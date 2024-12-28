@@ -10,7 +10,8 @@ main
 *.dll
 *.so
 *.dylib
-bin/*
+bin/go_*
+bin/testcpu*
 
 # Test binary, built with `go test -c`
 *.test
