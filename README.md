@@ -1,9 +1,17 @@
 # testcpu
 A bunch of separate tests of CPU performance by language - golang, c, php, js, and python (lol).  
 
+## Compile Everything
+Make.sh is a simple script that will compile all the compilables 
+and dump them into `bin/`. 
+```console
+$ chmod +x make.sh
+$ ./make.sh
+$ cd bin/ 
+```
 ## Go Usage:
 ```console
-$ go run main.go
+$ go run langs/go/main.go
 ```
 ![image](https://github.com/user-attachments/assets/c3ab3cd8-1e8d-44f7-bd88-1a065bee69c9)
 ## C Usage:
@@ -15,17 +23,17 @@ $ ./testcpu
 ![image](https://github.com/user-attachments/assets/da4647b4-a7b4-4e07-95ce-44d37a72f4c1)
 ## Python Usage:
 ```console
-$ python3 testcpu.py
+$ python3 langs/python/testcpu.py
 ```
 ![image](https://github.com/user-attachments/assets/123edef2-2863-4c36-90e9-8361aa3dc159)
 ## Node Usage:
 ```console
-$ node testcpu.js
+$ node langs/js/testcpu.js
 ```
 ![image](https://github.com/user-attachments/assets/7d440d7b-e96c-4ad9-baa0-51522b669feb)
 ## Bun Usage:
 ```console
-$ bun testcpu.js
+$ bun langs/js/testcpu.js
 ```
 ![image](https://github.com/user-attachments/assets/931494c7-319a-43b6-8a21-7f279eea8051)
 ## PHP Usage:
@@ -38,7 +46,7 @@ This one sucks.
 - 3. Then edit that ini file and make sure you add `extension=/path/to/parallel.so`
 4. Profit?
 ```console
-$ php testcpu.php
+$ php langs/php/testcpu.php
 ```
 ![image](https://github.com/user-attachments/assets/002aa2ca-ccc4-49df-bb12-6e3fbc585b2a)
 ## Additional Languages or Concepts

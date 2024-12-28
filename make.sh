@@ -5,10 +5,12 @@
 #
 # I should test that too. Ok. All the flags are isolated. Have fun!
 
-gcc -o testcpu_unoptimized testcpu.c
-gcc -o testcpu_O3 -O3 testcpu.c
-gcc -o testcpu_unroll -funroll-loops testcpu.c
-gcc -o testcpu_fastmath -ffast-math testcpu.c
-gcc -o testcpu_omit_frame_pointer -fomit-frame-pointer testcpu.c
+gcc -o bin/testcpu_unoptimized langs/c/testcpu.c
+gcc -o bin/testcpu_O3 -O3 langs/c/testcpu.c
+gcc -o bin/testcpu_unroll -funroll-loops langs/c/testcpu.c
+gcc -o bin/testcpu_fastmath -ffast-math langs/c/testcpu.c
+gcc -o bin/testcpu_omit_frame_pointer -fomit-frame-pointer langs/c/testcpu.c
 
-gcc -o testcpu testcpu.c -O3 -march=native -flto -funroll-loops -ffast-math -fomit-frame-pointer
+gcc -o bin/testcpu langs/c/testcpu.c -O3 -march=native -flto -funroll-loops -ffast-math -fomit-frame-pointer
+
+go build -o bin/go_testcpu langs/go/main.go

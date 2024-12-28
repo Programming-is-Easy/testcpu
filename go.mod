@@ -1,4 +1,4 @@
-module example.com/testcpu
+module github.com/programming-is-easy/testcpu
 
 go 1.23.4
 

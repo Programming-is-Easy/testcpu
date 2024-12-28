@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"example.com/testcpu/color"
+	"github.com/programming-is-easy/testcpu/langs/go/color"
 
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
